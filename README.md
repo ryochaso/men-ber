@@ -43,7 +43,7 @@
  ###  Association
  belongs_to: user
  has_many: comments
- has_many: tag
+ has_many: tag ??
  has_many: photo_tag
 
 ### commentテーブル
@@ -66,7 +66,7 @@
 | photo   | references | null: false, foreign_key: true |
 
 ###  Association
- belongs_to: photo
+ belongs_to: photo ??
  has_many: photo_tag
 
 ### photo_tagテーブル
@@ -78,5 +78,5 @@
 
 
 ###  Association
- has_many: photo
- has_many: tag
+ belongs_to: photo
+ belongs_to: tag
