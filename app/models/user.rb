@@ -12,7 +12,8 @@ class User < ApplicationRecord
     validates :password, format: {with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i }
     validates :first_name, format: {with: /\A[a-zA-Z]+\z/}
     validates :family_name, format: {with:  /\A[a-zA-Z]+\z/}
-    validates :country, format: {with: /\A[a-zA-Z]+\z/}
+    # validates :country, format: {with: /\A[a-zA-Z]+\z/}
+    validates :country, format: {with: /\A(^[A-Z])[a-z]+\z/}
     
   end
 end
