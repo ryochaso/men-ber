@@ -1,0 +1,11 @@
+.tanks{
+background-color: rgb(118, 160, 196);
+text-align: center;
+padding: 5%;
+font-size: 40px;
+font-family:'Osaka-Mono' ;
+font-weight: bold;
+font-style: italic;
+text-shadow: 2px 2px 0 rgba(105, 99, 99, 0.459), 5px 5px 0 #dfe8f1;
+
+}

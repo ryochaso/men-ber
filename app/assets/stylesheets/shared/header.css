@@ -1,0 +1,12 @@
+.icon{
+  width: 10%;
+  margin: 2%;
+}
+
+.top-icon{
+  display: flex;
+  justify-content: left;
+  background-color: rgb(189, 194, 194);
+
+}
+

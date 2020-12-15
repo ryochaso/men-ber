@@ -1,0 +1,34 @@
+.registration-main {
+  width: 100%;
+  min-width: 800px;
+  height: 100%;
+  background-color: #e2d6d6;
+  /* display: flex; */
+}
+
+.sign-up-header{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Osaka-Mono';
+
+}
+
+.field {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.actions{
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+
