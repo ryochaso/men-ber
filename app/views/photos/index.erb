@@ -1,14 +1,18 @@
-<p>index</p>
+  <%= render 'shared/header' %>
+  <%= render 'shared/sub_header' %>
+  <p>index</p>
 
-<span>
-  <%if user_signed_in? %>
-  <div class = "welcome">
-    welcome
-    <%= link_to "#{current_user.nickname}", '#', class: "user-nickname" %><br />
-    <%= link_to 'log out',destroy_user_session_path, method: :delete %>
-  </div>
-  <%else%>
-    <p><%= link_to 'sign up',new_user_registration_path , class: "sign-up" %></P>
-    <p><%= link_to 'sign in',new_user_session_path , class: "sign-in" %></p>
-  <%end%>
-</span>
+  <span>
+    <%if user_signed_in? %>
+    <div class = "welcome">
+      welcome
+      <%= link_to "#{current_user.nickname}", '#', class: "user-nickname" %><br />
+      <%= link_to 'log out',destroy_user_session_path, method: :delete %>
+    </div>
+    <%else%>
+      <p><%= link_to 'sign up',new_user_registration_path , class: "sign-up" %></P>
+      <p><%= link_to 'sign in',new_user_session_path , class: "sign-in" %></p>
+    <%end%>
+  </span>
+  <%= render 'shared/fooder' %>
+<%# </div> %>

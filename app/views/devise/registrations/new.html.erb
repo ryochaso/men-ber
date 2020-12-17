@@ -1,4 +1,5 @@
 <%= render 'shared/header' %>
+<%= render 'shared/sub_header' %>
 
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
 
@@ -7,47 +8,52 @@
   </div>
 
   <%= render 'shared/error_messages', model: f.object %>
+  <div class = "field-area">
+    <div class = "field-flame">
 
-  <div class='field'>
-    <%= f.label :nickname %><br />
-    <%= f.text_field :nickname, class:"input-default", id:"nickname", placeholder:"", maxlength:"20", size: 20 %>
-  </div>
+      <div class='field'>
+        <%= f.label :nickname %><br />
+        <%= f.text_field :nickname, class:"input-default", id:"nickname", placeholder:"max0", maxlength:"20" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+      <div class="field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      </div>
 
-  <div class='field'>
-    <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, class:"input-default", id:"nickname", placeholder:"Soup", maxlength:"40" %>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :family_name %><br />
-    <%= f.text_field :family_name, class:"input-default", id:"nickname", placeholder:" Ramen", maxlength:"40" %>
-  </div>
-  
-  <div class='field'>
-    <%= f.label :country %><br />
-    <%= f.text_field :country, class:"input-default", id:"nickname", placeholder:" Japan", maxlength:"30", size: 15 %>
-  </div>
+      <div class='field'>
+        <%= f.label :first_name %><br />
+        <%= f.text_field :first_name, class:"input-default", id:"nickname", placeholder:"Soup", maxlength:"20" %>
+      </div>
+      
+      <div class='field'>
+        <%= f.label :family_name %><br />
+        <%= f.text_field :family_name, class:"input-default", id:"nickname", placeholder:" Ramen", maxlength:"20" %>
+      </div>
+      
+      <div class='field'>
+        <%= f.label :country %><br />
+        <%= f.text_field :country, class:"input-default", id:"nickname", placeholder:" Japan", maxlength:"20" %>
+      </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+
+    </div>
   </div>
 <% end %>
 
