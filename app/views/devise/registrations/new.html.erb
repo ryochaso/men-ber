@@ -1,15 +1,17 @@
-<%= render 'shared/header' %>
-<%= render 'shared/sub_header' %>
+<%= render 'shared/header' %> 
+<%= render 'shared/sub_header' %> 
 
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
 
-  <div class = "sign-up-header">
-    Sign up
-  </div>
-
-  <%= render 'shared/error_messages', model: f.object %>
   <div class = "field-area">
+
     <div class = "field-flame">
+    
+      <%= render 'shared/error_messages', model: f.object %>
+
+      <div class = "sign-up-header">
+        Sign up
+      </div>
 
       <div class='field'>
         <%= f.label :nickname %><br />
@@ -54,6 +56,7 @@
       </div>
 
     </div>
+
   </div>
 <% end %>
 
