@@ -1,0 +1,20 @@
+.field {
+  width: 100%;
+  /* display: block; */
+  /* flex-direction: column; */
+  /* margin: 0 auto; */
+  padding-top: 20px;
+  font-size: large;
+}
+
+.field-flame{
+  padding: 1em;
+  width: 90%;
+  color: #666666; /*文字色*/
+  border: 5px solid #996633; /*線の太さ・色*/
+  background-color: rgb(255, 255, 255); /*背景色*/
+  box-shadow: -2px 5px 5px #e8d3c7; /*影*/
+  border-radius: 20px; 
+  width: 50vw;
+  margin-left: 25%;
+  /* margin-top: 25%; */

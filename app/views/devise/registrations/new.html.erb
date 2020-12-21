@@ -3,11 +3,11 @@
 
 <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
 
+<%= render 'shared/error_messages', model: f.object %>
   <div class = "field-area">
 
     <div class = "field-flame">
     
-      <%= render 'shared/error_messages', model: f.object %>
 
       <div class = "sign-up-header">
         Sign up
